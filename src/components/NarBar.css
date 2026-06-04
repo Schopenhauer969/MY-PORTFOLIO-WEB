@@ -1,6 +1,8 @@
-* {
+body {
+  margin: 0;
   overflow: hidden;
 }
+
 .container {
   user-select: none;
 }
@@ -8,8 +10,11 @@
   width: 100%;
   position: fixed;
   bottom: 0vh;
-  background-color: rgb(30, 139, 255);
+  background-color: rgb(0, 123, 255);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 .start {
   width: 100px;
@@ -20,15 +25,16 @@
   font-weight: bold;
   font-style: italic;
   color: white;
+  border-radius: 0px 15px 15px 0px;
 }
 .time {
-  padding-left: 1350px;
   color: white;
   font-size: 13px;
-  padding-top: 5px;
+  font-weight: bold;
+  padding-right: 15px;
 }
 
 .law {
   width: 100px;
-  pointer-events: none;
+  pointer-events: auto;
 }

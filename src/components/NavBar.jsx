@@ -1,9 +1,11 @@
 import "./NarBar.css";
+import Start from "../page/StartForm";
 
 import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [date, setDate] = useState(new Date());
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,10 +19,13 @@ const NavBar = () => {
     <div>
       <nav className="container">
         <div className="contain">
-          <button className="start">start</button>
-
+          <button className="start" onClick={() => setShow((prev) => !prev)}>
+            start
+          </button>
+          {show && <Start />}
           <div className="time">
-            {date.toLocaleTimeString()} {date.toLocaleDateString()}
+            <div>{date.toLocaleTimeString()}</div>
+            <div> {date.toLocaleDateString()}</div>
           </div>
         </div>
       </nav>
