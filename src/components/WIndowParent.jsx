@@ -3,6 +3,8 @@ import Book from "../assets/bb.png";
 import L from "../assets/L.png";
 import { useState } from "react";
 import ThisPcForm from "../page/ThisPcForm";
+import Calculator from "../page/Calculator";
+import CalPic from "../assets/cal.png";
 
 const WIndowParent = () => {
   const [showWindow, setShowWindow] = useState(false);
@@ -21,9 +23,9 @@ const WIndowParent = () => {
     },
     {
       id: 2,
-      image: L,
-      text: "ThisPc",
-      link: "https://www.remove.bg/",
+      image: CalPic,
+      text: "Calculator",
+      link: "",
       x: 0,
       y: 130,
       onDoubleClick: () => {
@@ -88,7 +90,7 @@ const WIndowParent = () => {
         );
       })}
       {showWindow && <ThisPcForm onClose={() => setShowWindow(false)} />}
-      {showWindow1 && <ThisPcForm onClose={() => setShowWindow1(false)} />}
+      {showWindow1 && <Calculator onClose={() => setShowWindow1(false)} />}
     </div>
   );
 };

@@ -17,12 +17,13 @@ const NavBar = () => {
 
   return (
     <div>
+      {show && <Start />}
       <nav className="container">
         <div className="contain">
           <button className="start" onClick={() => setShow((prev) => !prev)}>
             start
           </button>
-          {show && <Start />}
+
           <div className="time">
             <div>{date.toLocaleTimeString()}</div>
             <div> {date.toLocaleDateString()}</div>

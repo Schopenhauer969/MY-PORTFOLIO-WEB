@@ -31,3 +31,42 @@ body {
 .size-red:hover {
   background-color: rgb(255, 63, 63);
 }
+
+.start-container {
+  display: flex;
+}
+.contain1 {
+  width: 270px;
+  height: 400px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.contain2 {
+  width: 30px;
+  height: 450px;
+  background-color: rgb(142, 202, 255);
+}
+.rotate {
+  transform: rotate(-90deg);
+  margin-top: 410px;
+  white-space: pre;
+  color: rgb(255, 255, 255);
+}
+.manu {
+  display: flex;
+  width: 270px;
+  cursor: pointer;
+}
+.manu:hover {
+  background-color: rgb(243, 243, 243);
+}
+.manu-text {
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.manu-des {
+  font-size: 13px;
+  padding-left: 12px;
+  color: gray;
+}
